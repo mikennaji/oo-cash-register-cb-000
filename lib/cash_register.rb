@@ -7,5 +7,10 @@ def initialize(age = 0)
     @discount= age
 end
 
+def discount
+  @discount
+end
+
+
 
 end
