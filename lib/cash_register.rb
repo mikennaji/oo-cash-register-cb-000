@@ -2,7 +2,7 @@ class CashRegister
 
 attr_accessor :total, :titles
 
-@@all = []
+
 
 def initialize(age = 0)
     @total = 0
@@ -22,7 +22,7 @@ def add_item(title,price,quantity=1)
 end
 
 def items
-  @@all
+  @titles
 end
 
 def apply_discount
