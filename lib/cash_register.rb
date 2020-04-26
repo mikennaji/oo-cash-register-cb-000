@@ -7,6 +7,7 @@ attr_accessor :total, :title
 def initialize(age = 0)
     @total = 0
     @discount= age
+    @title
 end
 
 def discount
