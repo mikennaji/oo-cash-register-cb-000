@@ -24,7 +24,7 @@ def apply_discount
       total_changed = self.total - discount
       self.total = total_changed
       puts "After the discount, the total comes to #{self.total}"
-    
+
 end
 
 end
