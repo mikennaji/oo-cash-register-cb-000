@@ -19,7 +19,7 @@ end
 def apply_discount
 
 
-    discount_percentage = self.discount.to_i/100
+    discount_percentage = (self.discount).to_i/100
     discount =  (self.total*discount_percentage)
     total_changed = self.total - discount
     self.total = total_changed
