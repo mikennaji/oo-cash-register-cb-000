@@ -17,10 +17,6 @@ def add_item(title,price,quantity=1)
 end
 
 def apply_discount(discount)
-  new_employe_subtotal = CashRegister.new(discount)
-  discount_percentage = new_employe_total.discount /100
-  employee_discount = new_employe_subtotal.total-(new_employe_subtotal.total * (discount_percentage))
-  new_employe_subtotal.total = employee_discount
 
 
 end
