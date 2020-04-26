@@ -8,6 +8,7 @@ def initialize(age = 0)
     @total = 0
     @discount= age
     @titles = []
+    @transaction = []
 end
 
 def discount
@@ -17,6 +18,7 @@ end
 def add_item(title,price,quantity=1)
  @quantity = quantity
   self.total += price * @quantity
+  @transaction << price
   count = @quantity
   if @quantity>1
     until count == 0
@@ -24,7 +26,7 @@ def add_item(title,price,quantity=1)
      count -= 1
    end
  else
-   @titles <<title
+    @titles <<title
   end
 
 end
@@ -47,5 +49,10 @@ def apply_discount
  end
 
 end
+
+def void_last_transaction
+  price_of_last_transcation = @transaction[@transaction.size-1]
+  total_before_change = self.total
+  self.total =  total_before_change - price_of_last_transcation
 
 end
