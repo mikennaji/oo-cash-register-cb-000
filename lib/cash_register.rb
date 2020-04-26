@@ -8,7 +8,7 @@ def initialize(age = 0)
     @total = 0
     @discount= age
     @titles = []
-    @transaction = []   #### if you add an array to track variablas when initialized it can be used to track anything added whilst the instatnce is being operated on with methods liek add
+    @transaction = []   #### if you add an array to track variables when initialized it can be used to track anything added whilst the instatnce is being operated on with methods liek add
 end
 
 def discount
