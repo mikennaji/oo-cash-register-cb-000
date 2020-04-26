@@ -24,7 +24,7 @@ if self.discount
       total_changed = self.total - discount
       self.total = total_changed
       return"After the discount, the total comes to $#{self.total.to_i}."
-else
+elsif self.discount == 0 
     return "There is no discount to apply."
 end
 
