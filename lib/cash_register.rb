@@ -19,7 +19,7 @@ def add_item(title,price,quantity=1)
   @@all << title
 end
 
-def items 
+def items
 
   @@all
 end
