@@ -54,5 +54,7 @@ def void_last_transaction
   price_of_last_transcation = @transaction[@transaction.size-1]
   total_before_change = self.total
   self.total =  total_before_change - price_of_last_transcation
+end
+
 
 end
