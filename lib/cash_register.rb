@@ -24,7 +24,7 @@ def add_item(title,price,quantity=1)
      count -= 1
    end
  else
-   items <<title
+   @titles <<title
   end
 
 end
