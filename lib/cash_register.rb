@@ -18,13 +18,13 @@ end
 
 def apply_discount
 
-    if self.discount
+    if self.discount 
       discount_percentage = (self.discount).to_f/100
       discount =  (self.total*discount_percentage)
       total_changed = self.total - discount
       self.total = total_changed
       puts "After the discount, the total comes to #{self.total}"
-    else
+    elsif self.discount == nil
       puts "There is no discount to apply."
     end
 end
