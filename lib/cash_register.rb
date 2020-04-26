@@ -18,6 +18,9 @@ end
 
 def apply_discount
   new_register = CashRegister.new(self.discount)
+  discount_percentage = new_register.discount/100
+  new_register.total = new_register.total -(new_register.total*discount_percentage)
+  
   
 
 end
