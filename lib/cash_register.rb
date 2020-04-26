@@ -23,9 +23,9 @@ def apply_discount
       discount =  (self.total*discount_percentage)
       total_changed = self.total - discount
       self.total = total_changed
-      if self.discount == 0 
+      if self.discount == 0
         return "There is no discount to apply."
-      else 
+      else
         return"After the discount, the total comes to $#{self.total.to_i}."
       end
 
