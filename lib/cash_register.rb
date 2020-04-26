@@ -2,6 +2,8 @@ class CashRegister
 
 attr_accessor :total
 
+@@all = []
+
 def initialize(age = 0)
     @total = 0
     @discount= age
@@ -14,6 +16,11 @@ end
 def add_item(title,price,quantity=1)
  @quantity = quantity
   self.total += price * @quantity
+  self.class.items << title
+end
+
+def self.items
+  @@all
 end
 
 def apply_discount
