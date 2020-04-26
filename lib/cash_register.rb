@@ -8,7 +8,7 @@ def initialize(age = 0)
     @total = 0
     @discount= age
     @titles = []
-    @transaction = []   #### if you add an array to track variablas when initialized it can be used to track anything added whilst the instatnce is being operated on with methods liek add 
+    @transaction = []   #### if you add an array to track variablas when initialized it can be used to track anything added whilst the instatnce is being operated on with methods liek add
 end
 
 def discount
@@ -54,10 +54,10 @@ def void_last_transaction
   price_of_last_transcation = @transaction[@transaction.size-1]
   total_before_change = self.total
   self.total =  total_before_change - price_of_last_transcation
-  if @transaction.size == 0 
+  if @transaction.size == 0
     self.total = 0.0
   end
-  
+
 end
 
 
