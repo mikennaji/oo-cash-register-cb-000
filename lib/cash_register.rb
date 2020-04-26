@@ -17,7 +17,7 @@ def add_item(title,price,quantity=1)
 end
 
 def apply_discount
-  new_register = CashRegister.new(self.discount)
+  new_register = CashRegister.new(discount)
   discount_percentage = new_register.discount/100
   discount =  (new_register.total*discount_percentage)
   total_changed = new_register.total - discount
