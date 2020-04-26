@@ -52,7 +52,7 @@ end
 
 def void_last_transaction
 
-  if @transaction.empty?
+  if @transaction.size  ==1 || @transaction.empty?
     self.total = 0.0
   else
     price_of_last_transcation = @transaction[@transaction.size-1]
