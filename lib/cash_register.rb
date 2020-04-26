@@ -17,7 +17,7 @@ def add_item(title,price,quantity=1)
  @quantity = quantity
   self.total += price * @quantity
   @title = title
-  @all << self.title
+  @@all << self.title
 end
 
 def items
