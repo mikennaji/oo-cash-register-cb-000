@@ -17,7 +17,15 @@ end
 def add_item(title,price,quantity=1)
  @quantity = quantity
   self.total += price * @quantity
-  @titles << title * @quantity
+  count = @quantity
+  if @quantity>1
+    until count == 0
+     @titles << title
+     count -= 1
+   end
+ else
+   @titles <<title
+  end
 
 end
 
