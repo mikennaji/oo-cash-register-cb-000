@@ -21,7 +21,7 @@ def apply_discount
   discount_percentage = new_register.discount/100
   new_register.total = new_register.total -(new_register.total*discount_percentage)
   
-  
+
 
 end
 
