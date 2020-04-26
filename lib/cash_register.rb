@@ -23,7 +23,7 @@ def apply_discount
       discount =  (self.total*discount_percentage)
       total_changed = self.total - discount
       self.total = total_changed
-      puts "After the discount, the total comes to #{self.total}"
+      return"After the discount, the total comes to #{self.total}"
 
 end
 
