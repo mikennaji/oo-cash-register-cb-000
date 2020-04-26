@@ -1,6 +1,6 @@
 class CashRegister
 
-attr_accessor :total, :titles
+attr_accessor :total
 
 
 
