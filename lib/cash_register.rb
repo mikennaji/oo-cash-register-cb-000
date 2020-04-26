@@ -18,7 +18,7 @@ end
 
 def apply_discount
   new_register = CashRegister.new(discount)
-  
+
 
 
 end
